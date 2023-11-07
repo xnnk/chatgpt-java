@@ -1,0 +1,17 @@
+server:
+  port: 13597
+spring:
+  application:
+    name: chatgpt-java
+  # 更改运行环境
+  profiles:
+    active: local
+  neo4j:
+    authentication:
+      username: ${graph.neo4j.username}
+      password: ${graph.neo4j.password}
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://${graph.mysql.host}:3306/graphdb?serverTimezone=Asia/Shanghai&characterEncoding=utf-8
+    username: ${graph.mysql.username}
+    password: ${graph.mysql.password}

@@ -1,0 +1,9 @@
+# 本地环境
+graph:
+  mysql:
+    host: localhost
+    username: root
+    password: xxx
+  neo4j:
+    username: neo4j
+    password: xxx
